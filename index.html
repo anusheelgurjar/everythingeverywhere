@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Section Page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+        .full-section {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            background-color: #f3f4f6; /* bg-gray-100 */
+        }
+        .pingpong_everything {
+            position: absolute;
+            inset: 0;
+            background-color: rgba(255, 0, 0, 0); /* bg-red-500/20 */
+        }
+        .button-container {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        #everything {
+            top: 10%;
+        }
+        #everywhere {
+            bottom: 10%;
+        }
+        .my-button {
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* bg-white/80 */
+            color: #000; /* text-black */
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <section class="full-section">
+        
+        <div class="pingpong_everything" id="pingpong_everything">
+        </div>
+        <div class="button-container" id="everything">
+            <button id="everything" class="my-button">Everything</button>
+        </div>
+        <div class="button-container" id="everywhere">
+            <button id="everywhere" class="my-button">Everywhere</button>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.5/lib/p5.js"></script>
+    <script src="sketch3.js"></script>
+    
+    </body>
+</html>
